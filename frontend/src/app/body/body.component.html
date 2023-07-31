@@ -1,0 +1,165 @@
+<div id="body">
+  <div id="actions" [ngClass]="{ hidden: !winSize || !isMobileMenu }">
+    <div class="user rounded-xl">
+      👋 welcome back, <b>user</b>
+      <p>sdfsfd</p>
+    </div>
+    <div class="wallet bg-black rounded-xl">
+      <h4>wallet balance</h4>
+      <b><h1>$ 2,50,000</h1></b>
+      <p>current balance</p>
+      <p>running low? <a href="">click here</a>to add more</p>
+    </div>
+    <div class="pending rounded-xl">
+      <div>Pending actions</div>
+      <div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+        <div>dfjkgbljfdhglkdhfbklsdfhbvlkj</div>
+      </div>
+    </div>
+  </div>
+  <div id="cards">
+    <div class="frequently-used rounded-xl">
+      <div>Frequently used</div>
+      <div>
+        <div>
+          <b><h4>View Funds</h4></b>
+          <p>you ave used this service 20 times in the lase week</p>
+          <a href="">Action CTA>></a>
+        </div>
+        <div>
+          <b><h4>Manage Users</h4></b>
+          <p>you ave used this service 20 times in the lase week</p>
+          <a href="">Action CTA>></a>
+        </div>
+        <div>
+          <b><h4>View Orders</h4></b>
+          <p>you ave used this service 20 times in the lase week</p>
+          <a href="">Action CTA>></a>
+        </div>
+      </div>
+    </div>
+    <div class="orderdetails">
+      <div class="range">
+        <div>
+          <select
+            name="branch"
+            id=""
+            class="rounded-xl rangs"
+            (change)="onBranchSelectionChange($event)"
+          >
+            <option value="">All branches</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Maharashtra">Maharashtra</option>
+          </select>
+        </div>
+        <div>
+          <select
+            name="range"
+            id=""
+            class="rounded-xl rangs"
+            (change)="onBranchSelectionChange($event)"
+          >
+            <option value="">Custom range</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <input
+            type="date"
+            name=""
+            id="date"
+            class="rounded-xl rangs"
+            (change)="onBranchSelectionChange($event)"
+          />
+        </div>
+      </div>
+      <div class="order">
+        <div>Order Details <a href="">All details</a></div>
+        <div>
+          <div>
+            <b><h1>{{ allorders }}</h1></b>
+            <p>Total Orders</p>
+            <p>dfvev</p>
+          </div>
+          <div>
+            <b
+              ><h1>{{ inprogress }}</h1></b
+            >
+            <p>In Progress</p>
+            <p>dfvev</p>
+          </div>
+          <div>
+            <b
+              ><h1>{{ completed }}</h1></b
+            >
+            <p>Completed Orders</p>
+            <p>dfvev</p>
+          </div>
+          <div>
+            <b
+              ><h1>{{ cancelled }}</h1></b
+            >
+            <p>Cancelled Orders</p>
+            <p>dfvev</p>
+          </div>
+        </div>
+      </div>
+      <div id="sign">
+        <div class="D1">
+          <div class="mx-auto w-3/5">
+            <h4>E-sign count</h4>
+            <canvas
+              id="canv"
+              data-te-chart="doughnut"
+              data-te-dataset-label="Traffic"
+              data-te-labels="['initiated', 'signed' , 'expired' , 'pending' ]"
+              data-te-dataset-background-color="['rgba(63, 81, 181, 0.5)', 'rgba(77, 182, 172, 0.5)', 'rgba(66, 133, 244, 0.5)', 'rgba(156, 39, 176, 0.5)' ]"
+            >
+            </canvas>
+          </div>
+
+          <div>
+            <div class="mx-auto w-3/5">
+              <canvas id="canv" id="doughnut-chart"> </canvas>
+            </div>
+          </div>
+        </div>
+        <div class="D2">
+          <div class="mx-auto w-3/5">
+            <h4>E-stamp count</h4>
+            <canvas
+              id="canv"
+              data-te-chart="doughnut"
+              data-te-dataset-label="Traffic"
+              data-te-labels="['initiated', 'signed' , 'expired' , 'pending' ]"
+              data-te-dataset-background-color="['rgba(63, 81, 181, 0.5)', 'rgba(77, 182, 172, 0.5)', 'rgba(66, 133, 244, 0.5)', 'rgba(156, 39, 176, 0.5)' ]"
+            >
+            </canvas>
+          </div>
+
+          <div>
+            <div class="mx-auto w-3/5">
+              <canvas id="canv" id="doughnut-chart2"> </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
