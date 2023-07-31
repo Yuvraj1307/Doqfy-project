@@ -4,7 +4,7 @@
 https://doqfy-project.vercel.app/
 
 ## Video Walkthrough of the project
-
+https://drive.google.com/file/d/1Kplp_VYW5lopWL8g2tmrFddjOqIbx-3n/view?usp=sharing
 ## Features
 
 - Filteration
